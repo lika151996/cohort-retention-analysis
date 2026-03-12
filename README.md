@@ -119,8 +119,25 @@ The analysis suggests that while Promo campaigns may generate short-term spikes 
 However, evaluating acquisition channels purely based on retention is not sufficient for strategic decisions.
 
 A complete evaluation would require additional financial metrics such as: Customer Acquisition Cost (CAC),  Lifetime Value (LTV), Return on Investment (ROI), These metrics were not available in the dataset.
+## Visualizations
 
-![Retention Chart](retention_chart.png)
+### Cohort Retention Comparison
+
+![Retention Comparison](retention_comparison.png)
+
+This chart compares retention rates between Organic and Promo acquisition channels over the first 6 months after user registration.
+
+Organic users maintain significantly higher retention over time, while Promo users experience a steep drop after month 2–3.
+
+---
+
+### Active Users by Acquisition Channel
+
+![Active Users Trend](active_users_trend.png)
+
+This chart shows the number of active users over time for each acquisition channel.
+
+Organic users demonstrate more stable engagement compared to Promo users.
 
 
 
