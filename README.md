@@ -120,5 +120,7 @@ However, evaluating acquisition channels purely based on retention is not suffic
 
 A complete evaluation would require additional financial metrics such as: Customer Acquisition Cost (CAC),  Lifetime Value (LTV), Return on Investment (ROI), These metrics were not available in the dataset.
 
+![Retention Chart](retention_chart.png)
+
 
 
