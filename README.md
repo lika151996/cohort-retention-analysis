@@ -10,91 +10,91 @@ The analysis focuses on user retention during the first 6 months after registrat
 
 Business Problem
 
-The objective of this analysis was to evaluate the quality of users acquired through different acquisition channels and measure their retention over time.
+1. The objective of this analysis was to evaluate the quality of users acquired through different acquisition channels and measure their retention over time.
 
 The key business question was:
 
-Which acquisition channel delivers more stable long-term user engagement?
+1. Which acquisition channel delivers more stable long-term user engagement?
 
-Understanding this helps companies decide where to allocate marketing resources and which acquisition strategies generate more valuable users.
+2. Understanding this helps companies decide where to allocate marketing resources and which acquisition strategies generate more valuable users.
 
 Dataset
 
 The dataset contained:
 
-Users table
+1. Users table:
 
-user_id
+- user_id
 
-registration_date
+- registration_date
 
-acquisition_channel
+- acquisition_channel
 
-Events table
+2.Events table:
 
-user_id
+- user_id
 
-event_date
+- event_date
 
-activity events
+- activity events
 
 These tables were used to measure user activity and retention over time.
 
-Tools Used
+Tools Used:
 
-PostgreSQL
+- PostgreSQL
 
-CTE (Common Table Expressions)
+- CTE (Common Table Expressions)
 
-JOIN operations
+- JOIN operations
 
-Date transformations
+- Date transformations
 
-Cohort analysis logic
+- Cohort analysis logic
 
-Google Sheets
+- Google Sheets
 
-Pivot Tables
+- Pivot Tables
 
-Conditional Formatting
+- Conditional Formatting
 
-Slicers
+- Slicers
 
-Data Visualization (charts)
+- Data Visualization (charts)
 
-Analytical Approach
+- Analytical Approach
 
 The analysis was conducted in several steps:
 
-Data Cleaning
+1. Data Cleaning
 
-Standardized date formats using SQL.
+2. Standardized date formats using SQL.
 
-Data Preparation
+3. Data Preparation
 
-Joined user and event tables using appropriate JOIN logic.
+4. Joined user and event tables using appropriate JOIN logic.
 
-Calculated the cohort_month based on user registration date.
+5. Calculated the cohort_month based on user registration date.
 
-Cohort Calculation
+6. Cohort Calculation
 
-Calculated month_offset (number of months since registration).
+7. Calculated month_offset (number of months since registration).
 
-Built a cohort retention table showing active users per cohort and month.
+8. Built a cohort retention table showing active users per cohort and month.
 
-Retention Calculation
+9. Retention Calculation
 
-Calculated Retention Rate (%) relative to cohort size
+10. Calculated Retention Rate (%) relative to cohort size
 
-Month 0 = 100% baseline.
+11. Month 0 = 100% baseline.
 
-Data Visualization
+12. Data Visualization
 
-Exported results to Google Sheets.
+13. Exported results to Google Sheets.
 
-Built Pivot Tables to analyze retention by cohort and acquisition channel.
+14. Built Pivot Tables to analyze retention by cohort and acquisition channel.
 
-Created charts and retention curves.
+15. Created charts and retention curves.
 
 Key Insights
 
@@ -118,12 +118,7 @@ The analysis suggests that while Promo campaigns may generate short-term spikes 
 
 However, evaluating acquisition channels purely based on retention is not sufficient for strategic decisions.
 
-A complete evaluation would require additional financial metrics such as:
+A complete evaluation would require additional financial metrics such as: Customer Acquisition Cost (CAC),  Lifetime Value (LTV), Return on Investment (ROI), These metrics were not available in the dataset.
 
-Customer Acquisition Cost (CAC)
 
-Lifetime Value (LTV)
 
-Return on Investment (ROI)
-
-These metrics were not available in the dataset.
